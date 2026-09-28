@@ -1,0 +1,2 @@
+class EmptyFitFileError(Exception):
+    pass

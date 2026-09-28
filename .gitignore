@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# Ruff / tooling
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local database
+data/*.db
+data/*.db-journal
+data/*.db-shm
+data/*.db-wal
+
+# Imported/raw files
+data/raw/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
