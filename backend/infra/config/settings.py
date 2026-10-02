@@ -18,10 +18,6 @@ class Settings(BaseSettings):
     @property
     def db_path(self) -> Path:
         return self.data_dir / "session_lab.db"
-    
-    @property
-    def raw_data_path(self):
-        return self.data_dir / "raw"
 
 
 settings = Settings()

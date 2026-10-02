@@ -2,6 +2,7 @@ from typing import Annotated, Literal
 
 from pydantic import Field, computed_field
 
+from backend.api.workouts.types import StrokeType
 from backend.api.workouts.schemas.common import (
     DistanceResponse,
     IndexedResponse,
@@ -27,9 +28,7 @@ class ActiveSegmentResponse(BaseSegmentResponse):
     type: Literal["active"]
     meters: float = Field(exclude=True)
     stroke_count: int = Field(exclude=True)
-    stroke_type: Literal["freestyle", "backstroke", "breaststroke", "butterfly"] = Field(
-        exclude=True
-    )
+    stroke_type: StrokeType = Field(exclude=True)
 
     @computed_field
     @property

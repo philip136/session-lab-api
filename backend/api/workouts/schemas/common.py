@@ -1,7 +1,7 @@
 from datetime import datetime
-from typing import Literal
 
 from backend.api.schema import ApiSchema
+from backend.api.workouts.types import StrokeType
 
 
 class IndexedResponse(ApiSchema):
@@ -38,7 +38,7 @@ class StrokeSummaryResponse(ApiSchema):
 
 
 class SegmentStrokeResponse(StrokeSummaryResponse):
-    type: Literal["freestyle", "backstroke", "breaststroke", "butterfly"]
+    type: StrokeType
 
 
 class LengthsResponse(ApiSchema):
