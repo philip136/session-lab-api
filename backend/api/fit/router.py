@@ -3,7 +3,7 @@ from typing import Annotated
 from fastapi import APIRouter, Depends, File, UploadFile, status
 
 from backend.api.fit.schemas.fit import ImportFitRequest, ImportFitResponse
-from backend.app.imports.service import ImportFitService
+from backend.app.fit.service import ImportFitService
 
 router = APIRouter(prefix="/fit", tags=["Fit"])
 
