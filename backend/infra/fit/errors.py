@@ -1,0 +1,2 @@
+class FitParseError(Exception):
+    pass
